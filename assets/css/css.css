@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    background-image: url("../img/Coffe.jpg");
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align : center;
+    bottom: 0;
+    width: 229vh;
+}
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .landing-page {
+    background-image: url("../img/wallpaperflare.com_wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    width: 236vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .carousel-container {
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 30px;
+  }
+  
+  .carousel-slide {
+    display: flex;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    transition: transform 1.s ease;
+  }
+  
+  .prev-btn, .next-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 99%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+  }
+
+  .prev-btn {
+    left: 100px;
+  }
+  
+  .next-btn {
+    right: 100px;
+  }
+  
+  .welcome-text {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .welcome-text h2 {
+    font-size: 3em;
+    color: black;
+  }
+
+  .welcome-text h3 {
+    font-size: 1em;
+    color: black;
+  }
+  
+  .welcome-text p {
+    font-size: 1.5em;
+    color: black;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 230vh;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 18px;
+}

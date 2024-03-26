@@ -1,0 +1,32 @@
+/* Gaya untuk produk */
+#productsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-image: url("../img/spider\ cat.jpg");
+}
+
+.product {
+    width: 300px;
+    margin: 10px;
+    border: 4px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 40px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product > div {
+    margin-bottom: 5px;
+}

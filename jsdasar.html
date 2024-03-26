@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contoh Fundamental JavaScript</title>
+</head>
+<body>
+
+<h1>Variabel dan Tipe Data:</h1>
+<p id="varTypeOutput"></p>
+
+<h1>Pernyataan Percabangan:</h1>
+<p id="branchingOutput"></p>
+
+<h1>Pengulangan:</h1>
+<p id="loopOutput"></p>
+
+<h1>Fungsi:</h1>
+<p id="functionOutput"></p>
+
+<h1>Manipulasi DOM (Document Object Model):</h1>
+<h1 id="judul">Judul Awal</h1>
+<button id="tombol">Ubah Judul</button>
+
+<h1>Asynchronous JavaScript (Contoh dengan Fetch API):</h1>
+<p id="fetchOutput"></p>
+
+<h1>Penanganan Kesalahan (Error Handling):</h1>
+<p id="errorOutput"></p>
+
+<script>
+  // Variabel dan Tipe Data
+  var nama = "John";
+  let umur = 25;
+  const IPK = 3.14;
+
+  document.getElementById("varTypeOutput").innerHTML = `Nama: ${nama}, Umur: ${umur}, Nilai IPK: ${IPK}`;
+
+  // Pernyataan Percabangan
+  let nilai = 70;
+  let branchingResult = (nilai >= 70) ? "Selamat! Anda lulus." : "Maaf, Anda belum lulus.";
+  document.getElementById("branchingOutput").innerHTML = branchingResult;
+
+  // Pengulangan
+  let loopFor = "";
+  for (let i = 0; i < 5; i++) {
+      loopFor += "Iterasi ke-" + (i+1) + "<br>";
+  }
+  document.getElementById("loopOutput").innerHTML = loopFor;
+
+  // Fungsi
+  function sapa(nama) {
+      return "Halo, " + nama + "!";
+  }
+  document.getElementById("functionOutput").innerHTML = sapa("John");
+
+  // Manipulasi DOM (Document Object Model)
+  document.getElementById("tombol").addEventListener("click", function() {
+      document.getElementById("judul").textContent = "Judul Baru";
+  });
+
+  // Asynchronous JavaScript (Contoh dengan Fetch API)
+  fetch('https://api.example.com/data')
+    .then(response => response.json())
+    .then(data => document.getElementById("fetchOutput").textContent = JSON.stringify(data))
+    .catch(error => console.error('Terjadi kesalahan:', error));
+
+  // Penanganan Kesalahan (Error Handling)
+  try {
+      let hasil = 10 / 0;
+  } catch (error) {
+      document.getElementById("errorOutput").textContent = "Terjadi kesalahan: " + error;
+  }
+</script>
+
+</body>
+</html>
